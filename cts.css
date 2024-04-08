@@ -1,0 +1,182 @@
+
+.side-nav{
+width: 160px;
+height: 100%;
+background: #20b2aa;
+position: fixed;
+top:0;
+left:0;
+padding: 20px 30px;
+}
+.navlinks{
+list-style: none;
+position: relative;
+margin-left: -1rem
+}
+
+.navlinks li{
+padding: 1px 0;
+margin-left: -1.5rem; 
+}
+.navlinks li a{
+color: white;
+text-decoration: none;
+padding: 10px 14px;
+display: flex;
+align-items: center;
+font-family: Brush Script MT, sans-serif;
+}
+.navlinks li a img{
+filter: brightness(0) invert(1);
+width: 22px;
+margin-right: 10px
+}
+
+.navlinks .Logo{
+border-radius: 50px;
+}
+.active {
+    background: white;
+    width: 90%;
+    height: 47px;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    z-index: -1;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+    display: none;
+    pointer-events: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.navlinks li:hover a {
+    color: #20b2aa;
+    
+}
+.navlinks li:hover a img{
+filter: brightness(0) invert(0);
+}
+
+.navlinks li:hover ~ .active { 
+    display: flex;
+    pointer-events: auto;
+}
+.navlinks li:nth-child(1):hover ~ .active {
+    top: 2.6px;
+}
+
+.navlinks li:nth-child(2):hover ~ .active {
+    top: 90px;
+
+}
+
+.navlinks li:nth-child(3):hover ~ .active {
+    top: 9.5rem;
+}
+
+.navlinks li:nth-child(4):hover ~ .active {
+    top: 14rem;
+}
+
+.navlinks li:nth-child(5):hover ~ .active {
+    top: 19rem;
+}
+
+.navlinks li:nth-child(6):hover ~ .active {
+    top: 23.5rem;
+}
+.logomobile{
+border-radius: 50px;
+width: 45px;
+display: none;
+}
+.content{
+margin-left: 15rem;
+font-family: Brush Script MT, sans-serif;
+cursor: pointer;
+margin-top: 12rem;
+word-wrap: none;
+line-break: none;
+}
+
+.Logolist{
+list-style: none;
+font-family: Brush Script MT, sans-serif;
+font-size: 2rem;
+color: white;
+padding: 10px 14px;
+background-color: #22c3bb;
+border-radius: 15px;
+margin-top: -2rem;
+margin-left: 0.1rem;
+margin-right: 1.5rem;
+margin-bottom:1rem;
+
+}
+
+.Logolist li p{
+margin-top:1rem;
+margin-left: -0.5rem;
+}
+
+
+.Logo{
+border-radius: 60px;
+padding: 10px 14px;
+margin-left: -0.5rem;
+}
+.content button {
+  width: 170px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+ 
+  }
+
+.content button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px){
+.side-nav{
+width: 30px
+}
+.active{
+margin-left: 1rem;
+}
+.logo-img{
+display:none;
+}
+.logomobile{
+display:block;
+}
+.navlinks li a p{
+display: none;
+}
+.navlinks li a img{
+padding: 1.01rem 0;
+margin-top:-0.1rem;
+}
+}
+@media screen and (max-width: 600px) {
+  .content {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}
+}
